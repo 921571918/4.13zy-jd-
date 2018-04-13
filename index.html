@@ -9,16 +9,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="fonts2/iconfont.css">
+    <link rel="stylesheet" href="swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
 </head>
 
 <body>
     <div class="wrap">
         <div class="header">
-            <!-- 1.轮播+input-->
+            <div class="swiper-container one">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ab">
+                <span><i class="icon iconfont icon-shouqi-01"></i></span>
+                <input type="text" placeholder="钓鱼竿">
+                <i class="icon iconfont icon-fangdajing f"></i>
+            </div>
         </div>
         <div class="section">
-            <div>
-                <!--2.list列表-->
+            <div class='list-cmy'>
+                <li>
+                    <cty><img src="img/l1.png" alt=""></cty>
+                    <span>领惠券</span>
+                </li>
+                <li>
+                    <cty><img src="img/l2.png" alt=""></cty><span>优惠券</span></li>
+                <li>
+                    <cty><img src="img/l3.png" alt=""></cty><span>领惠券</span></li>
+                <li>
+                    <cty><img src="img/l4.png" alt=""></cty><span>领优券</span></li>
+                <li>
+                    <cty><img src="img/l5.png" alt=""></cty><span>领优券</span></li>
+                <li>
+                    <cty><img src="img/l6.png" alt=""></cty><span>领惠券</span></li>
+                <li>
+                    <cty><img src="img/l7.png" alt=""></cty><span>领优券</span></li>
+                <li>
+                    <cty><img src="img/l8.png" alt=""></cty><span>领优惠</span></li>
+                <li>
+                    <cty><img src="img/l9.png" alt=""></cty><span>领优券</span></li>
+                <li>
+                    <cty><img src="img/l0.png" alt=""></cty><span>领惠券</span></li>
             </div>
             <div>
                 <!--3.一张大图-->
@@ -40,10 +85,37 @@
             </div>
         </div>
         <div class="footer">
-            <!--5.-->
+            <span>
+                <i class="iconfont icon-shouye"></i>
+                <em>首页</em>
+            </span>
+            <span>
+                <i class="iconfont icon-fenlei-xuanzhong"></i>
+                <em>微选</em>
+            </span>
+            <span>
+                <i class="iconfont icon-Instagram"></i>
+                <em>购物圈</em>
+            </span>
+            <span>
+                <i class="iconfont icon-zantinghuodong"></i>
+                <em>购物车</em>
+            </span>
+            <span>
+                <i class="iconfont icon-wode"></i>
+                <em>个人中心</em>
+            </span>
         </div>
     </div>
 
 </body>
+<script src='js/swiper-3.4.2.min.js'></script>
+<script src='js/jquery-2.1.1.min.js'></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 1000,
+        loop: true
+    })
+</script>
 
 </html>

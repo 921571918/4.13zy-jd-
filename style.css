@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 12px;
 }
 
 html,
@@ -20,7 +21,61 @@ body {
 .header {
     width: 100%;
     height: 150px;
-    background: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .ab {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 999;
+    padding: 0 10px;
+}
+
+.f {
+    position: absolute;
+    left: 4rem;
+    top: 10px;
+}
+
+.header .ab span {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, .7);
+    margin-right: 10px;
+}
+
+.header .ab input {
+    width: calc(100% - 70px - 32px);
+    outline: none;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, .7);
+    padding-left: 30px;
+}
+
+.header .one {
+    width: 100%;
+    height: 100%;
+}
+
+.header .one .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.header .one .swiper-slide>img {
+    width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -28,8 +83,63 @@ body {
     background: yellow;
 }
 
+.list-cmy {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.list-cmy>li {
+    width: 12%;
+    padding: 0 10px;
+}
+
+cty {
+    display: block;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.list-cmy>li>cty>img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10%;
+}
+
 .footer {
     width: 100%;
     height: 50px;
-    background: skyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer>span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer>span>i.iconfont {
+    font-size: 20px;
+    color: #999;
+}
+
+.footer>span>em {
+    font-size: 12px;
+    font-style: normal;
+    color: #999;
+}
+
+.footer>span:nth-child(1)>i.iconfont {
+    color: #E93B3D;
+}
+
+.footer>span:nth-child(1)>em {
+    color: #E93B3D;
 }
