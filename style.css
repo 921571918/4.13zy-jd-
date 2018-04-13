@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 12px;
 }
 
 html,
@@ -26,6 +27,34 @@ body {
 .section {
     flex: 1;
     background: yellow;
+}
+
+.list-cmy {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.list-cmy>li {
+    width: 12%;
+    padding: 0 10px;
+}
+
+cty {
+    display: block;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.list-cmy>li>cty>img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10%;
 }
 
 .footer {
